@@ -1724,7 +1724,6 @@ public class BubbleStackView extends FrameLayout
 
     /**
      * Changes the expanded state of the stack.
-     * Don't call this directly, call mBubbleData#setExpanded.
      *
      * @param shouldExpand whether the bubble stack should appear expanded
      */
@@ -1771,7 +1770,7 @@ public class BubbleStackView extends FrameLayout
             } else if (mManageEduView != null && mManageEduView.getVisibility() == VISIBLE) {
                 mManageEduView.hide();
             } else {
-                mBubbleData.setExpanded(false);
+                setExpanded(false);
             }
         }
     }
