@@ -4,3 +4,4 @@
 gen/
 .vscode/
 *.code-workspace
+**/nppBackup/*
